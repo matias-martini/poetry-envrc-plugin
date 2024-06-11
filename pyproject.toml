@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "poetry-envrc-plugin"
+version = "0.1.0"
+description = "A Poetry plugin to load environment variables from .envrc"
+authors = ["Matias Martini <m.martini.1294@gmail.com>"]
+packages = [{ include = "poetry_envrc_plugin" }]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+python-dotenv = "^0.19.2"
+poetry = "^1.8.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."poetry.plugin"]
+"envrc_plugin" = "poetry_envrc_plugin.envrc_plugin:EnvrcPlugin"
