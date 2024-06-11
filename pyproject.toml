@@ -7,8 +7,9 @@ packages = [{ include = "poetry_envrc_plugin" }]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-python-dotenv = "^0.19.2"
-poetry = "^1.8.3"
+python-dotenv = "^1.0.1"
+virtualenv = "^20.13.4" 
+poetry = "^1.8.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
